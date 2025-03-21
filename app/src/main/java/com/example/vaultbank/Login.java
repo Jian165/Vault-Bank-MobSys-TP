@@ -1,8 +1,11 @@
 package com.example.vaultbank;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -16,6 +19,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Login extends AppCompatActivity {
     CheckBox cbVisibility;
     EditText edtPassword;
+    Button btnRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +45,21 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentRegist = new Intent(Login.this, Regist.class);
+                startActivity(intentRegist);
+            }
+        });
     }
 
     private void LaodComponents()
     {
         edtPassword = findViewById(R.id.edt_password);
         cbVisibility = findViewById(R.id.cb_visibility);
+        btnRegister = findViewById(R.id.btn_createAccount);
 
     }
 }

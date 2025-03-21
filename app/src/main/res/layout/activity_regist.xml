@@ -42,7 +42,6 @@
             android:textAlignment="center"
             android:textColor="@color/darkBlue"
             android:textSize="36dp" />
-
         <TextView
         android:id="@+id/lbl_email"
         android:layout_width="match_parent"
@@ -127,9 +126,7 @@
             android:layout_below="@id/lblPasswords"
             android:layout_alignLeft="@+id/lblPasswords"
             android:layout_alignRight="@+id/lblPasswords"
-            android:layout_marginLeft="-5dp"
             android:layout_marginTop="2dp"
-            android:layout_marginRight="5dp"
             android:background="@drawable/bg_rgstr_textbox"
             android:inputType="textPassword"
             android:textSize="28dp" />
