@@ -10,7 +10,7 @@
     <View
         android:id="@+id/v_background1"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         android:background="@drawable/bg_white_blue1"
         />
     <View
@@ -22,22 +22,129 @@
         android:background="@drawable/bg_white_blue2"
         />
 
+    <TextView
+        android:id="@+id/lbl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_extra_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="36dp"
+        android:textColor="@color/gold_1"
+        android:letterSpacing="0.1"
+        />
+
+    <TextView
+        android:id="@+id/lbl_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_login"
+        android:text="Email"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_variable"
+        android:layout_alignRight="@+id/lbl_login"
+        android:layout_alignLeft="@+id/lbl_login"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_email"
+        android:background="@drawable/bg_login_textbox"
+        android:textSize="28dp"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/lbl_email"
+        android:layout_alignRight="@+id/lbl_email"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_email_28"
+        android:layout_alignLeft="@+id/edt_email"
+        android:layout_alignTop="@+id/edt_email"
+        android:layout_alignBottom="@+id/edt_email"
+        android:padding="4dp"
+        />
 
 
+
+    <TextView
+        android:id="@+id/lbl_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_email"
+        android:text="Password"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_variable"
+        android:layout_alignRight="@+id/lbl_login"
+        android:layout_alignLeft="@+id/lbl_login"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_password"
+        android:background="@drawable/bg_login_textbox"
+        android:inputType="textPassword"
+        android:textSize="28dp"
+        android:layout_alignLeft="@+id/lbl_email"
+        android:layout_alignRight="@+id/lbl_email"
+        />
+
+    <TextView
+        android:id="@+id/lbl_forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
+        android:text="Frogot Password"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_variable"
+        android:layout_alignRight="@+id/lbl_login"
+        android:layout_alignLeft="@+id/lbl_login"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/bg_s_button_gold"
         android:text="Login"
         android:letterSpacing="0.1"
+        android:layout_marginTop="32dp"
         android:textColor="@color/darkBlue"
         android:fontFamily="@font/roboto_extra_bold"
         android:textSize="16dp"
         android:elevation="20dp"
+        android:layout_below="@+id/lbl_forgetPassword"
+        android:layout_alignLeft="@+id/lbl_forgetPassword"
+        android:layout_alignRight="@+id/lbl_forgetPassword"
         android:shadowColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btn_login"
+        android:layout_alignLeft="@+id/btn_login"
+        android:background="@drawable/bg_s_button_gold_stroke"
+        android:layout_marginBottom="80dp"
+        android:text="CREATE ACCOUNT"
+        android:fontFamily="@font/roboto_variable"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
         />
 
 </RelativeLayout>
