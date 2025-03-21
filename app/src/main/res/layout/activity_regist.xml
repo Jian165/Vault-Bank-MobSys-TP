@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Regist">
+    <RelativeLayout
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Login">
+
+
+        <View
+            android:id="@+id/v_background1"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:background="@drawable/bg_blue_white1"
+            />
+        <View
+            android:id="@+id/v_background2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/v_background1"
+            android:background="@drawable/bg_blue_white2"
+            />
+
+        <TextView
+            android:id="@+id/lblRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/roboto_extra_bold"
+            android:letterSpacing="0.1"
+            android:text="REGISTER"
+            android:textAlignment="center"
+            android:textColor="@color/darkBlue"
+            android:textSize="36dp" />
+
+        <TextView
+        android:id="@+id/lbl_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblRegister"
+        android:text="Name"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_variable"
+        android:layout_alignRight="@+id/lblRegister"
+        android:layout_alignLeft="@+id/lblRegister"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_email"
+        android:background="@drawable/bg_rgstr_textbox"
+        android:textSize="28dp"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/lbl_email"
+        android:layout_alignRight="@+id/lbl_email"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_email_28"
+        android:layout_alignLeft="@+id/edtEmail"
+        android:layout_alignTop="@+id/edtEmail"
+        android:layout_alignBottom="@+id/edt_email"
+        android:padding="4dp"
+        />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_email"
+        android:text="Email"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_variable"
+        android:layout_alignRight="@+id/lblRegister"
+        android:layout_alignLeft="@+id/lblRegister"
+        android:layout_marginTop="20dp"
+        />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblEmail"
+            android:layout_alignLeft="@+id/lbl_email"
+            android:layout_alignRight="@+id/lbl_email"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bg_rgstr_textbox"
+            android:inputType="textPassword"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/lblPasswords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Password"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_variable"
+            android:layout_alignRight="@+id/lblEmail"
+            android:layout_alignLeft="@+id/lblEmail"
+            android:layout_below="@+id/edtEmail"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edtPasswords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblPasswords"
+            android:layout_alignLeft="@+id/lblPasswords"
+            android:layout_alignRight="@+id/lblPasswords"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_rgstr_textbox"
+            android:inputType="textPassword"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/lblcnfPasswords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_variable"
+            android:layout_alignRight="@+id/lblPasswords"
+            android:layout_alignLeft="@+id/lblPasswords"
+            android:layout_below="@+id/edtPasswords"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/edtcnfPasswords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblcnfPasswords"
+            android:background="@drawable/bg_rgstr_textbox"
+            android:inputType="textPassword"
+            android:textSize="28dp"
+            android:layout_alignLeft="@+id/lblPasswords"
+            android:layout_alignRight="@+id/lblPasswords"
+            />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signUP"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-13dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/bg_s_button_gold"
+            android:elevation="20dp"
+            android:fontFamily="@font/roboto_extra_bold"
+            android:letterSpacing="0.1"
+            android:shadowColor="@color/black"
+            android:text="Sign Up"
+            android:textColor="@color/darkBlue"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
