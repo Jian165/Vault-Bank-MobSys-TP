@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,4 +7,93 @@
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/v_balance_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_dashboard_yellow"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_balanceCard"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        app:cardCornerRadius="16dp"
+        android:elevation="40dp"
+        app:cardElevation="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/v_balance_Container"
+        android:layout_alignLeft="@+id/v_balance_Container"
+        android:layout_alignTop="@+id/v_balance_Container"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gold_container"
+            >
+            <TextView
+                android:id="@+id/lbl_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello Jeck Jeck!"
+                android:fontFamily="@font/roboto_extra_bold"
+                android:textColor="@color/darkBlue"
+                android:textSize="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <View
+                android:id="@+id/v_cardLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkBlue"
+                android:layout_below="@+id/lbl_username"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/lbl_totalBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_cardLine"
+                android:layout_alignLeft="@+id/lbl_username"
+                android:layout_alignRight="@+id/lbl_username"
+                android:text="Total Savings Balance"
+                android:fontFamily="@font/roboto_variable"
+                android:textStyle="bold"
+                android:textColor="@color/darkBlue"
+                android:textSize="16dp"
+                android:letterSpacing="0.08"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_totalBalance"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/lbl_username"
+                android:layout_alignRight="@+id/lbl_username"
+                android:layout_marginBottom="20dp"
+                android:text="$100,000"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_extra_bold"
+                android:textSize="64dp"
+                android:textColor="@color/darkBlue"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_balanceCard"
+        android:layout_alignLeft="@+id/cv_balanceCard"
+        android:layout_alignRight="@id/cv_balanceCard"
+        android:layout_alignBottom="@+id/v_balance_Container"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>
