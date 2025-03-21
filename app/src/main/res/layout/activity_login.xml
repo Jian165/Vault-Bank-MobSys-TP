@@ -58,7 +58,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/lbl_email"
         android:background="@drawable/bg_login_textbox"
-        android:textSize="28dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textSize="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="34dp"
         android:singleLine="true"
         android:layout_alignLeft="@+id/lbl_email"
         android:layout_alignRight="@+id/lbl_email"
@@ -96,9 +101,34 @@
         android:layout_below="@id/lbl_password"
         android:background="@drawable/bg_login_textbox"
         android:inputType="textPassword"
-        android:textSize="28dp"
+        android:hint="Password"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="34dp"
+        android:paddingRight="28dp"
+        android:textSize="16dp"
         android:layout_alignLeft="@+id/lbl_email"
         android:layout_alignRight="@+id/lbl_email"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock_28"
+        android:layout_alignLeft="@+id/edt_password"
+        android:layout_alignTop="@+id/edt_password"
+        android:layout_alignBottom="@+id/edt_password"
+        android:padding="4dp"
+        />
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_visibility"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:button="@null"
+        android:drawableLeft="@drawable/ic_s_password_visibility"
+        android:layout_alignTop="@+id/edt_password"
+        android:layout_alignBottom="@+id/edt_password"
+        android:layout_alignRight="@+id/edt_password"
         />
 
     <TextView
@@ -107,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_password"
         android:text="Frogot Password"
-        android:textSize="18dp"
+        android:textSize="14dp"
         android:textColor="@color/white"
         android:fontFamily="@font/roboto_variable"
         android:layout_alignRight="@+id/lbl_login"
