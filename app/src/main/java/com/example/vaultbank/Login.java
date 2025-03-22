@@ -20,6 +20,7 @@ public class Login extends AppCompatActivity {
     CheckBox cbVisibility;
     EditText edtPassword;
     Button btnRegister;
+    Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,14 @@ public class Login extends AppCompatActivity {
                 startActivity(intentRegist);
             }
         });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentDashboard= new Intent(Login.this, Dashboard.class);
+                startActivity(intentDashboard);
+            }
+        });
     }
 
     private void LaodComponents()
@@ -60,6 +69,7 @@ public class Login extends AppCompatActivity {
         edtPassword = findViewById(R.id.edt_password);
         cbVisibility = findViewById(R.id.cb_visibility);
         btnRegister = findViewById(R.id.btn_createAccount);
+        btnLogin = findViewById(R.id.btn_login);
 
     }
 }
