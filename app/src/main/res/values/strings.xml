@@ -1,3 +1,105 @@
 <resources>
     <string name="app_name">Vault Bank</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="deals_title">
+        <item>10% Cashback on Supermarket Purchases</item>
+        <item>0% Interest on New Credit Cards for 6 Months</item>
+        <item>Exclusive Dining Discounts – Up to 25% Off</item>
+        <item>Earn Double Reward Points on Travel Bookings</item>
+        <item>$100 Bonus for New Savings Accounts</item>
+    </string-array>
+
+    <string-array name="inbox_message">
+        <item>Your payment of $3,200.00 to Mark was successfully processed.</item>
+        <item>A purchase of $850.00 at TechZone was made using your card—confirm if this was authorized.</item>
+        <item>Alert: A withdrawal of $1,500.00 was made from an ATM in New York—verify if this was you.</item>
+        <item>Your recent wire transfer of $5,000.00 to Global Investments is being processed.</item>
+        <item>We detected multiple declined transactions on your card—please check your account.</item>
+        <item>A refund of $120.50 has been credited to your account—view details now.</item>
+        <item>Your automatic bill payment of $299.99 to Utility Services was completed successfully.</item>
+        <item>We noticed a login from a new device—was this you?</item>
+        <item>Your recent transaction at Luxury Watches for $7,499.00 has been flagged for review.</item>
+        <item>Suspicious activity detected: A transfer of $9,800.00 was attempted from your account—secure your account now.</item>
+    </string-array>
+
+    <string-array name="inbox_title">
+        <item>Payment Successful</item>
+        <item>Purchase Alert</item>
+        <item>ATM Withdrawal Alert</item>
+        <item>Wire Transfer Notice</item>
+        <item>Multiple Declined</item>
+        <item>Refund Processed</item>
+        <item>Bill Payment Confirmation</item>
+        <item>Security Notification</item>
+        <item>Transaction Under Review</item>
+        <item>Fraud Warning</item>
+    </string-array>
+
+    <string-array name="inbox_time">
+        <item>9:45 AM</item>
+        <item>12:30 PM</item>
+        <item>3:15 PM</item>
+        <item>8:50 AM</item>
+        <item>6:20 PM</item>
+        <item>11:10 AM</item>
+        <item>7:00 AM</item>
+        <item>5:45 PM</item>
+        <item>2:25 PM</item>
+        <item>10:55 PM</item>
+    </string-array>
+
+
+    <string-array name="transactio_amount">
+        <item>-₱320</item>
+        <item>-₱850</item>
+        <item>-₱150</item>
+        <item>-₱500</item>
+        <item>-₱275</item>
+        <item>+₱120</item>
+        <item>-₱299</item>
+        <item>+₱210</item>
+        <item>-₱745</item>
+        <item>-₱980</item>
+    </string-array>
+
+    <string-array name="transaction_type">
+        <item>Send Money</item>
+        <item>Bank Transfer</item>
+        <item>ATM Withdrawal</item>
+        <item>Online Payment</item>
+        <item>Failed Transaction</item>
+        <item>Refund Received</item>
+        <item>Bill Payment</item>
+        <item>Deposit Received</item>
+        <item>Cash Out</item>
+        <item>Cash Out</item>
+    </string-array>
+
+    <string-array name="transaction_date">
+        <item>Mar 22, 2025</item>
+        <item>Mar 21, 2025</item>
+        <item>Mar 20, 2025</item>
+        <item>Mar 19, 2025</item>
+        <item>Mar 18, 2025</item>
+        <item>Mar 17, 2025</item>
+        <item>Mar 16, 2025</item>
+        <item>Mar 15, 2025</item>
+        <item>Mar 14, 2025</item>
+        <item>Mar 13, 2025</item>
+    </string-array>
+
+    <string-array name="transaction_time">
+        <item>9:45 AM</item>
+        <item>12:30 PM</item>
+        <item>3:15 PM</item>
+        <item>8:50 AM</item>
+        <item>6:20 PM</item>
+        <item>11:10 AM</item>
+        <item>7:00 AM</item>
+        <item>5:45 PM</item>
+        <item>2:25 PM</item>
+        <item>10:55 PM</item>
+    </string-array>
 </resources>

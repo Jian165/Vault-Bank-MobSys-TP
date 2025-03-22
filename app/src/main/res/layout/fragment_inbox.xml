@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inbox">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/l_T_logo_area"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo2"
+                android:scaleType="fitStart"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="Message Inbox"
+                android:fontFamily="@font/roboto_extra_bold"
+                android:textColor="@color/darkBlue"
+                android:textSize="16dp"
+                android:letterSpacing="0.05"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                />
+        </LinearLayout>
+        <View
+            android:id="@+id/v_transactionContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_T_logo_area"
+            android:background="@drawable/bg_dashboard_yellow"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/l_T_logo_area"
+            android:layout_alignRight="@+id/l_T_logo_area"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.25"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_Transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/v_transactionContainer"
+            android:layout_alignRight="@id/v_transactionContainer"
+            android:layout_alignTop="@id/v_transactionContainer"
+            android:layout_alignBottom="@id/v_transactionContainer"
+            android:layout_margin="10dp"
+            />
+    </RelativeLayout>
+
+</FrameLayout>
