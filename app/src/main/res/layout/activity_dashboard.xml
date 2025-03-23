@@ -13,12 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:elevation="10dp"
         app:tabMode="fixed"
         app:tabIconTint="@color/tab_icon_color"
         app:tabTextColor="@color/tab_text_color"
         app:tabIndicator="@color/darkBlue"
-        android:background="@drawable/bg_blue_white2_10"
+        android:background="@drawable/bg_blue_white2_5"
         >
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -45,9 +44,8 @@
         android:id="@+id/vp2_Dashboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="0dp"
         android:layout_above="@+id/tl_menuBar"
         android:layout_alignParentTop="true"
-        android:background="@drawable/bg_blue_white1_10"
+        android:background="@drawable/bg_blue_white1_5"
         />
 </RelativeLayout>

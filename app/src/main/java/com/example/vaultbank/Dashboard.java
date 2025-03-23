@@ -34,7 +34,6 @@ public class Dashboard extends AppCompatActivity {
         vp2Dashboard.setAdapter(adapter);
 
         tlManuBar.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            boolean isFromLeft;
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 vp2Dashboard.setCurrentItem(tab.getPosition());
