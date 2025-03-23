@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/roboto_extra_bold"
             android:letterSpacing="0.1"
@@ -42,19 +42,21 @@
             android:textAlignment="center"
             android:textColor="@color/darkBlue"
             android:textSize="36dp" />
+
         <TextView
-        android:id="@+id/lbl_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lblRegister"
-        android:text="Name"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/roboto_variable"
-        android:layout_alignRight="@+id/lblRegister"
-        android:layout_alignLeft="@+id/lblRegister"
-        android:layout_marginTop="20dp"
-        />
+            android:id="@+id/lbl_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblRegister"
+            android:layout_marginBottom="4dp"
+            android:text="Name"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_variable"
+            android:layout_alignRight="@+id/lblRegister"
+            android:layout_alignLeft="@+id/lblRegister"
+            android:layout_marginTop="12dp"
+            />
 
     <EditText
         android:id="@+id/edt_email"
@@ -62,19 +64,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/lbl_email"
         android:background="@drawable/bg_rgstr_textbox"
-        android:textSize="28dp"
+        android:textSize="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
         android:singleLine="true"
         android:layout_alignLeft="@+id/lbl_email"
         android:layout_alignRight="@+id/lbl_email"
-        />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_email_28"
-        android:layout_alignLeft="@+id/edtEmail"
-        android:layout_alignTop="@+id/edtEmail"
-        android:layout_alignBottom="@+id/edt_email"
-        android:padding="4dp"
         />
 
     <TextView
@@ -88,7 +85,7 @@
         android:fontFamily="@font/roboto_variable"
         android:layout_alignRight="@+id/lblRegister"
         android:layout_alignLeft="@+id/lblRegister"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         />
 
         <EditText
@@ -98,12 +95,14 @@
             android:layout_below="@id/lblEmail"
             android:layout_alignLeft="@+id/lbl_email"
             android:layout_alignRight="@+id/lbl_email"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="-1dp"
-            android:layout_marginRight="0dp"
             android:background="@drawable/bg_rgstr_textbox"
             android:inputType="textPassword"
-            android:textSize="28dp" />
+            android:textSize="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            />
 
         <TextView
             android:id="@+id/lblPasswords"
@@ -116,7 +115,7 @@
             android:layout_alignRight="@+id/lblEmail"
             android:layout_alignLeft="@+id/lblEmail"
             android:layout_below="@+id/edtEmail"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             />
 
         <EditText
@@ -126,10 +125,15 @@
             android:layout_below="@id/lblPasswords"
             android:layout_alignLeft="@+id/lblPasswords"
             android:layout_alignRight="@+id/lblPasswords"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/bg_rgstr_textbox"
             android:inputType="textPassword"
-            android:textSize="28dp" />
+            android:textSize="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            />
 
         <TextView
             android:id="@+id/lblcnfPasswords"
@@ -142,7 +146,7 @@
             android:layout_alignRight="@+id/lblPasswords"
             android:layout_alignLeft="@+id/lblPasswords"
             android:layout_below="@+id/edtPasswords"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             />
         <EditText
             android:id="@+id/edtcnfPasswords"
@@ -151,7 +155,11 @@
             android:layout_below="@id/lblcnfPasswords"
             android:background="@drawable/bg_rgstr_textbox"
             android:inputType="textPassword"
-            android:textSize="28dp"
+            android:textSize="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
             android:layout_alignLeft="@+id/lblPasswords"
             android:layout_alignRight="@+id/lblPasswords"
             />
