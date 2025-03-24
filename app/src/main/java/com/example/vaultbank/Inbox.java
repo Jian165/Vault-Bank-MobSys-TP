@@ -16,7 +16,7 @@ public class Inbox extends Fragment {
 
     RecyclerView rvInbox;
     View view;
-    ArrayList<MessageModel> messageModels = new ArrayList<>();
+    public static ArrayList<MessageModel> messageModels = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,6 +40,11 @@ public class Inbox extends Fragment {
         for(int i=0;i<messageTitle.length;i++) {
             messageModels.add(new MessageModel(messageTitle[i],messageText[i],messageTime[i]));
         }
+    }
+    public static void MessageModel(MessageModel messageModel)
+    {
+        messageModels.add(messageModel);
+
     }
 
     private void loadComponents(){

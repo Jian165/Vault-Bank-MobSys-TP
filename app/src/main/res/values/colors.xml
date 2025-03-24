@@ -5,8 +5,10 @@
     <color name="darkBlue">#131A21</color>
     <color name="gold_1">#D2AA4D</color>
     <color name="gold_2">#6C5728</color>
-    <color name="blueNigga">#4D55CC</color>
+    <color name="blueViolet">#4D55CC</color>
     <color name="gold_3">#A1833D</color>
     <color name="mocha">#E0C178</color>
-    <color name="Blue">#134679</color>
+    <color name="Blue">#236BBA</color>
+    <color name="Red">#FF6347</color>
+    <color name="blue5A">#2C435A</color>
 </resources>

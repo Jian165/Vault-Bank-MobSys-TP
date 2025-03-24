@@ -8,17 +8,17 @@
     tools:context=".MainActivity">
 
     <View
-        android:id="@+id/v_background1"
+        android:id="@+id/v_request_background1"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:background="@drawable/bg_blue_white1"
         />
     <View
-        android:id="@+id/v_background2"
+        android:id="@+id/v_request_background2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/v_background1"
+        android:layout_below="@+id/v_request_background1"
         android:background="@drawable/bg_blue_white2"
         />
 
@@ -41,7 +41,7 @@
         android:layout_marginTop="100dp"
         android:textAlignment="center"
         android:textSize="28dp"
-        android:layout_alignTop="@+id/v_background2"
+        android:layout_alignTop="@+id/v_request_background2"
         android:layout_centerHorizontal="true"
         />
 

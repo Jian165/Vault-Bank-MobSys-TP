@@ -29,12 +29,13 @@
                 android:layout_weight="1"
                 />
             <TextView
+                android:id="@+id/lbl_H_Date"
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:text="MM-DD-YYY"
                 android:fontFamily="@font/roboto_extra_bold"
                 android:textColor="@color/darkBlue"
-                android:textSize="13dp"
+                android:textSize="14dp"
                 android:layout_weight="1"
                 android:textAlignment="textEnd"
                 />
@@ -69,13 +70,13 @@
                 android:background="@drawable/bg_gold_container"
                 >
                 <TextView
-                    android:id="@+id/lbl_username"
+                    android:id="@+id/lbl_H_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Hello Mark"
                     android:fontFamily="@font/roboto_extra_bold"
                     android:textColor="@color/darkBlue"
-                    android:textSize="32dp"
+                    android:textSize="24dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     />
@@ -84,7 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/darkBlue"
-                    android:layout_below="@+id/lbl_username"
+                    android:layout_below="@+id/lbl_H_username"
                     android:layout_marginRight="5dp"
                     android:layout_marginLeft="5dp"
                     />
@@ -93,8 +94,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/v_cardLine"
-                    android:layout_alignLeft="@+id/lbl_username"
-                    android:layout_alignRight="@+id/lbl_username"
+                    android:layout_alignLeft="@+id/lbl_H_username"
+                    android:layout_alignRight="@+id/lbl_H_username"
                     android:text="Total Savings Balance"
                     android:fontFamily="@font/roboto_variable"
                     android:textStyle="bold"
@@ -103,18 +104,19 @@
                     android:letterSpacing="0.08"
                     />
                 <TextView
+                    android:id="@+id/lbl_Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/lbl_totalBalance"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignLeft="@+id/lbl_username"
-                    android:layout_alignRight="@+id/lbl_username"
+                    android:layout_alignLeft="@+id/lbl_H_username"
+                    android:layout_alignRight="@+id/lbl_H_username"
                     android:layout_marginBottom="20dp"
                     android:text="$100,000"
-                    android:textAlignment="center"
-                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
                     android:fontFamily="@font/roboto_extra_bold"
-                    android:textSize="60dp"
+                    android:textSize="50dp"
                     android:textColor="@color/darkBlue"
                     />
             </RelativeLayout>
@@ -142,7 +144,7 @@
                 android:columnCount="4"
                 >
                 <ImageButton
-                    android:id="@+id/btn_sendMoney"
+                    android:id="@+id/btn_Credit"
                     android:padding="5dp"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
@@ -153,7 +155,7 @@
                     android:src="@drawable/ic_send_money"
                     />
                 <ImageButton
-                    android:id="@+id/btn_receiveMoney"
+                    android:id="@+id/btn_SendMoney"
                     android:padding="2dp"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
@@ -164,8 +166,8 @@
                     android:src="@drawable/ic_transfer_solid"
                     />
                 <ImageButton
-                    android:id="@+id/btn_borrowMoney"
-                    android:padding="1dp"
+                    android:id="@+id/btn_RequestMoney"
+                    android:padding="2dp"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_columnWeight="1"
@@ -175,7 +177,7 @@
                     android:src="@drawable/ic_borrow"
                     />
                 <ImageButton
-                    android:id="@+id/btn_savings"
+                    android:id="@+id/btn_Savings"
                     android:layout_width="0dp"
                     android:padding="1dp"
                     android:layout_height="5dp"
@@ -211,7 +213,7 @@
                     android:layout_height="0dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    android:text="Receive"
+                    android:text="Request"
                     android:textColor="@color/white"
                     android:textAlignment="center"
                     android:textSize="10dp"
